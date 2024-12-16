@@ -10,12 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v3
       - name: set up JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'timurin'
+          distribution: 'temurin'
           cache: gradle
-
