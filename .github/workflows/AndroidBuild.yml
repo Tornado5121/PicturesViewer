@@ -3,18 +3,17 @@ name: Android CI
 on:
   workflow_dispatch:
     inputs:
-      test1:
-        description: 'Test1'
+      buildDebug:
+        description: 'Build debug build to firebase app distribution'
         type: boolean
-      test2:
-        description: 'Test2'
-        type: boolean
+        required: true
+        default: true
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    if: ${{inputs.buildDebug == true}}
     steps:
       - name: checkout
         uses: actions/checkout@v3
