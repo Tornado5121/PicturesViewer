@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.gms.google-services")
     id("kotlin-kapt")
 }
 
@@ -77,4 +78,8 @@ dependencies {
     //Room
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
+
+    //Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
 }

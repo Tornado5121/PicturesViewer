@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "983351870106",
+    "project_id": "picturesviewer-a4cc8",
+    "storage_bucket": "picturesviewer-a4cc8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983351870106:android:0c6aa134fce247a5145523",
+        "android_client_info": {
+          "package_name": "com.playrion.picturesviewer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7z8ZoEj6vdyQDf-tP7aFPrtPvG5JolHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
