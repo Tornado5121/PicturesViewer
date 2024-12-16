@@ -22,3 +22,10 @@ jobs:
         run: chmod +x gradlew
       - name: build debug build
         run: ./gradlew assembleDebug
+      - name: upload build to firebase app distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.5.1
+        with:
+          appId: ${{secrets.FIREBASE_ID}}
+          token: ${{secrets.FIREBASE_TOKEN}}
+          groups: testers
+          file: app/build/outputs/apk/debug/app-debug.apk
