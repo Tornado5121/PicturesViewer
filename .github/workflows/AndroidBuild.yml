@@ -5,6 +5,7 @@ on:
     inputs:
       test1:
         description: 'Test1'
+        type: boolean
       test2:
         description: 'Test2'
 
