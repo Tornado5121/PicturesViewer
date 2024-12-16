@@ -8,6 +8,7 @@ on:
         type: boolean
       test2:
         description: 'Test2'
+        type: boolean
 
 jobs:
   build:
